@@ -1,0 +1,10 @@
+{
+    "vendor": "PallyCon Multi-DRM",
+    "largeIcon": "icon.png",
+    "icon": "icon.png",
+    "main": "index.html",
+    "id": "com.pallycon.webos.shaka",
+    "title": "PallyCon Multi-DRM",
+    "type": "web",
+    "version": "1.0.0"
+}
