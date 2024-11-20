@@ -32,7 +32,7 @@ This document explains how to play `PallyCon Multi-DRM` content on webOS TV via 
 
 > Shaka Player is an [Google open-source JavaScript library](https://github.com/shaka-project/shaka-player) for adaptive media. It plays adaptive media formats (such as [DASH](http://dashif.org/), [HLS](https://developer.apple.com/streaming/) and [MSS](https://learn.microsoft.com/en-us/iis/media/smooth-streaming/smooth-streaming-transport-protocol)) in a browser, without using plugins or Flash. Instead, Shaka Player uses the open web standards [MediaSource Extensions](https://www.w3.org/TR/media-source/) and [Encrypted Media Extensions](https://www.w3.org/TR/encrypted-media/).
 
-#### The `PallyConTizen-HTMLShaka` sample uses Shaka Player. 
+#### The `PallyConWebOS-HTMLShaka` sample uses Shaka Player. 
 
 - Add the `Shaka Player` Javascript library.
 
