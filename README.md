@@ -1,4 +1,4 @@
-# PallyCon Multi-DRM + webOS TV
+# DoveRunner Multi-DRM + webOS TV
 
 > Multi-DRM integration sample for LG webOS TV application
 
@@ -6,7 +6,7 @@
 
 ## Overview
 
-This document explains how to play `PallyCon Multi-DRM` content on webOS TV via `Shaka Player`.
+This document explains how to play `DoveRunner Multi-DRM` content on webOS TV via `Shaka Player`.
 
 
 
@@ -44,13 +44,13 @@ This document explains how to play `PallyCon Multi-DRM` content on webOS TV via 
   </head>
   ```
 
-- In the `index.html` file `startPlayer()` function, enter the `PallyCon Multi-DRM` licence server address in the `player.configure` value.
+- In the `index.html` file `startPlayer()` function, enter the `DoveRunner Multi-DRM` licence server address in the `player.configure` value.
 
   ```javascript
   // index.html
   player.configure({
   	drm: {
-  		// PallyCon License Request URL
+  		// DoveRunner License Request URL
   		servers: {
   			"com.widevine.alpha": "https://license-global.pallycon.com/ri/licenseManager.do" 
       }
@@ -68,7 +68,7 @@ This document explains how to play `PallyCon Multi-DRM` content on webOS TV via 
   player.getNetworkingEngine().registerRequestFilter(function(type, request) {
   	if (type == shaka.net.NetworkingEngine.RequestType.LICENSE) {
   		// http header(custom data)
-  		request.headers["pallycon-customdata-v2"] = "PallyCon Multi-DRM License Request Token";
+  		request.headers["pallycon-customdata-v2"] = "DoveRunner Multi-DRM License Request Token";
   	}
   });
   ```
